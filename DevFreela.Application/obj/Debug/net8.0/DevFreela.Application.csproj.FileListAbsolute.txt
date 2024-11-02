@@ -1,0 +1,4 @@
+C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Application\obj\Debug\net8.0\DevFreela.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Application\obj\Debug\net8.0\DevFreela.Application.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Application\obj\Debug\net8.0\DevFreela.Application.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Application\obj\Debug\net8.0\DevFreela.Application.csproj.CoreCompileInputs.cache
