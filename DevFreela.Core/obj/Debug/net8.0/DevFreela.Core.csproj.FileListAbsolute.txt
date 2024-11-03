@@ -2,3 +2,15 @@ C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Core\obj\Debug\net8.
 C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfoInputs.cache
 C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfo.cs
 C:\Users\gabri\Desktop\Workspace\CSharp\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.sourcelink.json
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.deps.json
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.dll
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.pdb
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.dll
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\refint\DevFreela.Core.dll
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.pdb
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreela.Core\obj\Debug\net8.0\ref\DevFreela.Core.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {}
+    "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
+    "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
         "projectName": "DevFreela.Application",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Application\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
               },
-              "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj"
+              "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj"
               }
             }
           }
@@ -68,18 +68,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+    "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
         "projectName": "DevFreela.Core",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -129,18 +129,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj": {
+    "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj",
         "projectName": "DevFreela.Infraestructure",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\DevFreela.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,8 +158,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
               }
             }
           }
@@ -178,6 +178,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -194,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

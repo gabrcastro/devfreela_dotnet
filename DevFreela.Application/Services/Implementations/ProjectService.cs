@@ -46,7 +46,7 @@ namespace DevDreela.Application.Services.Implementations {
         List<ProjectViewModel> IProjectService.GetAll(string query) {
             var projects = _context.Projects;
             var projectsViewModel = projects
-                .Select(p => new ProjectViewModel(p.Title, p.CreatedAt))
+                .Select(p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt))
                 .ToList();
 
             return projectsViewModel;
@@ -55,9 +55,7 @@ namespace DevDreela.Application.Services.Implementations {
         ProjectDetailsViewModel IProjectService.GetOne(int id) {
             var project = _context.Projects.SingleOrDefault(p => p.Id == id);
 
-            if (project == null) {
-                throw new KeyNotFoundException($"Project with ID {id} not found.");
-            }
+            if (project == null) return null;
 
             var projectDetailsViewModel = new ProjectDetailsViewModel(
                 project.Id,

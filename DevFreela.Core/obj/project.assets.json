@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
       "projectName": "DevFreela.Core",
-      "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+      "projectPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\CSharp\\DevFreela\\DevFreela.Core\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Desktop\\Workspace\\C#\\DevFreela\\DevFreela.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

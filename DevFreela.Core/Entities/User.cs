@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevFreela.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,8 @@ namespace DevFreela.Core.Entities {
         public bool Active { get; set; }
 
         public List<UserSkill> Skills { get; private set; }
-        public List<Projects> OwnedProjects { get; private set; }
-        public List<Projects> FreelanceProjects { get; set; }
+        public List<Project> OwnedProjects { get; private set; }
+        public List<Project> FreelanceProjects { get; set; }
+        public List<ProjectComment> Comments { get; set; }
     }
 }

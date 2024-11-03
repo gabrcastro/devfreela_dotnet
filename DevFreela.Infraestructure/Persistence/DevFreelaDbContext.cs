@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,33 +9,68 @@ using DevFreela.Core.Entities;
 
 namespace DevFreela.Infraestructure.Persistence {
 
-    public class DevFreelaDbContext {
+    public class DevFreelaDbContext: DbContext {
 
-        public DevFreelaDbContext() {
-            Projects = new List<Project> {
-                new Project("Meu projeto 1", "Descricao 1", 1, 1, 11000),
-                new Project("Meu projeto 2", "Descricao 2", 1, 1, 10000),
-                new Project("Meu projeto 3", "Descricao 3", 1, 1, 2000),
-                new Project("Meu projeto 4", "Descricao 4", 1, 1, 35000),
-            };
-
-            Users = new List<User> {
-                new User("User 1", "user1@email", new DateTime(1990, 1, 1)),
-                new User("User 2", "user2@email", new DateTime(1990, 1, 1)),
-                new User("User 3", "user3@email", new DateTime(1990, 1, 1)),
-            };
-
-            Skills = new List<Skill> {
-                new Skill("C#"),
-                new Skill(".NET"),
-                new Skill("Angular"),
-
-            };
+        public DevFreelaDbContext(DbContextOptions<DevFreelaDbContext> options) : base(options) {
+            
         }
 
-        public List<Project> Projects { get; set; }
-        public List<User> Users { get; set; }
-        public List<Skill> Skills { get; set; }
-        public List<ProjectComment> ProjectComments { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<UserSkill> UserSkills { get; set; }
+        public DbSet<ProjectComment> ProjectComments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            /* 
+             * 1. definir as chaves primarias 
+             * 2. definir as chaves estrangeiras
+             * 
+             * 
+             * Restrict = Impedir que delete uma entidade que tenha relacionamento com outras
+             */
+            modelBuilder.Entity<Project>()
+                .HasKey(p => p.Id);
+
+            modelBuilder.Entity<Project>()
+                .HasOne(p => p.Freelancer)
+                .WithMany(f => f.FreelanceProjects)
+                .HasForeignKey(p => p.IdFreelancer)
+                .OnDelete(DeleteBehavior.Restrict); // comportamento quando remover alguma das duas entidades do relacionamento
+
+            modelBuilder.Entity<Project>()
+                .HasOne(p => p.Client)
+                .WithMany(f => f.OwnedProjects)
+                .HasForeignKey(p => p.IdClient)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<User>()
+                .HasKey(u => u.Id);
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Skills)
+                .WithOne()
+                .HasForeignKey(u => u.IdSkill)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Skill>()
+                .HasKey(s => s.Id);
+
+            modelBuilder.Entity<UserSkill>()
+                .HasKey(us => us.Id);
+
+            modelBuilder.Entity<ProjectComment>()
+                .HasKey(pc => pc.Id);
+
+            modelBuilder.Entity<ProjectComment>()
+                .HasOne(p => p.Project)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(p => p.IdProject);
+
+            modelBuilder.Entity<ProjectComment>()
+                .HasOne(p => p.User)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(p => p.IdUser);
+        }
     }
 }

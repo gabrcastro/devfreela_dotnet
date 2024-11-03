@@ -1,4 +1,6 @@
-﻿using DevFreelaAPI.Models;
+﻿using DevDreela.Application.InputModels;
+using DevDreela.Application.Services.Interfaces;
+using DevFreelaAPI.Models;
 using DevFreelaAPI.Models.Projects;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -7,73 +9,74 @@ namespace DevFreelaAPI.Controllers
 {
     [Route("apit/projecs")]
     public class ProjectsController : ControllerBase {
-        private readonly OpeningTimeOption _option;
-        public ProjectsController(IOptions<OpeningTimeOption> option, ExampleClass exampleClass) {
-            exampleClass.Name = "Updated at ProjectsController";
-            _option = option.Value;
+
+        private readonly IProjectService _projectService;
+
+        public ProjectsController(IProjectService projectService) {
+            _projectService = projectService;    
         }
     
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult Get(string query)
         {
-            return Ok();
+            var projects = _projectService.GetAll(query);
+            return Ok(projects);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetOne(int id)
-        {
-            return Ok();
+        public IActionResult GetById(int id)
+        {   
+            var project = _projectService.GetOne(id);
+            if (project == null) return NotFound();
+
+            return Ok(project);
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateProjectModel project)
+        public IActionResult Post([FromBody] NewProjectInputModel inputModel)
         {
-            if (project.Title.Length < 3)
-            {
-                return BadRequest();
-            }
+            if (inputModel.Title.Length < 3 || inputModel.Title.Length > 50) return BadRequest();
 
-            return CreatedAtAction(nameof(GetOne), new { id = project.Id }, project);
-        }
+            var id = _projectService.Create(inputModel);
 
-        [HttpPost("{id}/comments")]
-        public IActionResult CreateComment([FromBody] CreateCommentModel project) {
-            return NoContent();
+            return CreatedAtAction(nameof(GetById), new { id = id }, inputModel);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] UpdateProjectModel project)
-        {
-            if (project.Title.Length < 3)
-            {
-                return BadRequest();
-            }
+        public IActionResult Put(int id, [FromBody] UpdateProjecInputtModel inputModel) {
+            if (inputModel.Description.Length < 3 || inputModel.Description.Length > 50) return BadRequest();
 
-            return NoContent();
-        }
-
-        [HttpPut("{id}/start")]
-        public IActionResult UpdateStart(int id, [FromBody] UpdateProjectModel project) {
-            if (project.Title.Length < 3) {
-                return BadRequest();
-            }
-
-            return NoContent();
-        }
-
-        [HttpPut("{id}/finish")]
-        public IActionResult UpdateFinish(int id, [FromBody] UpdateProjectModel project) {
-            if (project.Title.Length < 3) {
-                return BadRequest();
-            }
+            _projectService.Update(inputModel);
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
+        public IActionResult Delete(int id) {
+            _projectService.Delete(id);
             return NoContent();
         }
+
+        [HttpPost("{id}/comments")]
+        public IActionResult PostComment([FromBody] CreateCommentInputModel inputModel) {
+            _projectService.CreateComment(inputModel);
+            return NoContent();
+        }
+
+        [HttpPut("{id}/start")]
+        public IActionResult UpdateStart(int id) {
+            _projectService.Start(id);
+
+            return NoContent();
+        }
+
+        [HttpPut("{id}/finish")]
+        public IActionResult UpdateFinish(int id) {
+            _projectService.Finish(id);
+
+            return NoContent();
+        }
+
+        
     }
 }
