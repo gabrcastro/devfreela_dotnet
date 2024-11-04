@@ -25,7 +25,7 @@ namespace DevDreela.Application.Services.Implementations {
         }
 
         void IProjectService.CreateComment(CreateCommentInputModel inputModel) {
-            var comment = new ProjectComment(inputModel.Content, inputModel.IdProject, inputModel.IdUser);
+            var comment = new ProjectComment(inputModel.Content, inputModel.IdProject, inputModel.Project, inputModel.IdUser, inputModel.User);
             _context.ProjectComments.Add(comment);
         }
 
