@@ -1,7 +1,8 @@
-using DevDreela.Application.Services.Implementations;
-using DevDreela.Application.Services.Interfaces;
+using DevFreela.Application.Services.Implementations;
+using DevFreela.Application.Services.Interfaces;
 using DevFreela.Infraestructure.Persistence;
 using DevFreelaAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,9 +15,17 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.Configure<OpeningTimeOption>(builder.Configuration.GetSection("OpeningTime"));
-builder.Services.AddSingleton<DevFreelaDbContext>();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(connectionString));
+
+//var databaseName = builder.Configuration.GetValue<string>("DatabaseName");
+//builder.Services.AddDbContext<DevFreelaDbContext>(options => options.UseInMemoryDatabase(databaseName));
+
 builder.Services.AddScoped<IProjectService, ProjectService>();
-builder.Services.AddSingleton<ExampleClass>(e => new ExampleClass { Name = "Initial Stage" });
+builder.Services.AddScoped<IUserService, UserService>();
+
+//builder.Services.AddSingleton<ExampleClass>(e => new ExampleClass { Name = "Initial Stage" });
 
 var app = builder.Build();
 

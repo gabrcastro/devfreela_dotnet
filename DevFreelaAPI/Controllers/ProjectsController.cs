@@ -1,5 +1,5 @@
 ﻿using DevDreela.Application.InputModels;
-using DevDreela.Application.Services.Interfaces;
+using DevFreela.Application.Services.Interfaces;
 using DevFreelaAPI.Models;
 using DevFreelaAPI.Models.Projects;
 using Microsoft.AspNetCore.Mvc;
