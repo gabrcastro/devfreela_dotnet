@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevFreelaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35118b3be80faae8745a1ce4c0de63a659e8be90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67635ffe649378487b0166e2dfb2b4a8b94d9df1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevFreelaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevFreelaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -180,3 +180,4 @@ C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreelaAPI\bin\Debug\net8.0\runt
 C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreelaAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreelaAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreelaAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\gabri\Desktop\Workspace\C#\DevFreela\DevFreelaAPI\bin\Debug\net8.0\Dapper.dll
